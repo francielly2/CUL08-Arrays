@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrescente</title>
+</head>
+<body>
+    <h3>Programa Números Decrescentes</h3>
+    <form name="ordem" action="" method="post">
+        Número: <input type="number" name="number"/><p></p>
+        <input type="button" name="btn_numero" value="Decrescer até 1" onclick="botao()"/>
+    </form>
+
+    <script>
+
+        var x;
+
+        function botao(){
+
+            x=document.ordem.number.value;
+
+            document.write("Entre " + x + " até 1: ");
+
+            if(x<=0){
+                window.alert("Número Inválido");
+            }
+
+            for (num=x; num>=1; num--){
+                document.write(num+", ");
+        }
+    }
+    </script>
+</body>
+</html>
